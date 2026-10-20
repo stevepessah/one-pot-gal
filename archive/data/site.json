@@ -1,0 +1,242 @@
+{
+  "title": "one pot gal",
+  "tagline": "snuggly, comfort food",
+  "description": "",
+  "url": "https://www.onepotgal.com/",
+  "instagram": "https://www.instagram.com/onepotgal",
+  "logo": "images/1600786646376-78TFYRQ9ZRLXUJMZ3I8I-one-pot-gal-logo-black-transparent.png",
+  "navigation": [
+    {
+      "label": "home",
+      "path": "/"
+    },
+    {
+      "label": "recipes",
+      "path": "/recipes"
+    },
+    {
+      "label": "about",
+      "path": "/about"
+    }
+  ],
+  "fonts": [
+    "Playfair Display",
+    "Libre Franklin",
+    "Fjalla One"
+  ],
+  "copiedOn": "2026-10-12T16:45:17.734939+00:00",
+  "publicRecipeCount": 9,
+  "squarespaceItemCount": 15,
+  "tags": [
+    "recipes",
+    "chicken",
+    "one pot",
+    "chicken and broccoli",
+    "pasta",
+    "bake",
+    "broccoli",
+    "short rib mushroom ragu",
+    "casserole",
+    "braid short rib",
+    "quinoa"
+  ],
+  "recipes": [
+    {
+      "title": "5 Ingredient Dutch Oven Sourdough Bread",
+      "slug": "5-ingredient-dutch-oven-sourdough-bread",
+      "url": "https://www.onepotgal.com/recipes/5-ingredient-dutch-oven-sourdough-bread",
+      "published": "2020-05-20",
+      "excerpt": "5 Ingredient Dutch Oven Sourdough Bread",
+      "tags": [],
+      "image": "images/1589987085761-UIQIBQZI283YZ8D71EF9-IMG_9013.jpg"
+    },
+    {
+      "title": "Creamy, Dreamy, Tortellini Soup",
+      "slug": "creamy-dreamy-tortellini-soup",
+      "url": "https://www.onepotgal.com/recipes/creamy-dreamy-tortellini-soup",
+      "published": "2020-05-17",
+      "excerpt": "One pot creamy, dreamy, tortellini soup with Italian sausage and spinach.",
+      "tags": [],
+      "image": "images/1589742164279-UX5M2ZA60O3O5NSU9R8Y-IMG_8898-1-.jpg"
+    },
+    {
+      "title": "Homemade Bolognese",
+      "slug": "bolognese",
+      "url": "https://www.onepotgal.com/recipes/bolognese",
+      "published": "2020-05-12",
+      "excerpt": "One pot bolognese of your dreams.",
+      "tags": [],
+      "image": "images/1589316514375-6T5PMTJDDL3QFK98UCEO-IMG_8527.jpg"
+    },
+    {
+      "title": "Crock-pot Thai Chicken Ramen",
+      "slug": "crockpot-thai-peanut-chicken-ramen",
+      "url": "https://www.onepotgal.com/recipes/crockpot-thai-peanut-chicken-ramen",
+      "published": "2020-05-11",
+      "excerpt": "Better-Than-Takeout Crockpot Thai Chicken Ramen.",
+      "tags": [],
+      "image": "images/1589210443556-WC39LCYPYDO9X0VWZH0F-IMG_8343.jpg"
+    },
+    {
+      "title": "Penne alla Vodka with Sausage & Peas",
+      "slug": "penne-alla-vodka-with-sausage-peas",
+      "url": "https://www.onepotgal.com/recipes/penne-alla-vodka-with-sausage-peas",
+      "published": "2020-05-02",
+      "excerpt": "An ode to my favorite Italian restaurant in NYC, I give you Penne alla Vodka with Sausage & Peas.",
+      "tags": [],
+      "image": "images/1588430993859-R8IZC7DWEAC2XVIBCNKC-F273C378-A097-4F98-96FA-0454B9217EDF.jpg"
+    },
+    {
+      "title": "Chicken and Dumpling Soup",
+      "slug": "chicken-and-dumpling-soup",
+      "url": "https://www.onepotgal.com/recipes/chicken-and-dumpling-soup",
+      "published": "2020-04-29",
+      "excerpt": "If I had to pick a “most requested” recipe, this would be it. My homemade chicken and dumpling soup is everyone’s favorite! It’s super cozy, super easy to make, and really, really yummy.",
+      "tags": [],
+      "image": "images/1588119662253-K7Q62XBYP7IWFS8HY1HQ-C1C59A01-3262-4CE5-8D36-8FCF1BC8B484.jpg"
+    },
+    {
+      "title": "One-Pot Chicken Broccoli Quinoa Bake",
+      "slug": "one-pot-chicken-broccoli-quinoa-bake",
+      "url": "https://www.onepotgal.com/recipes/one-pot-chicken-broccoli-quinoa-bake",
+      "published": "2020-04-26",
+      "excerpt": "Yesterday finally felt like spring (woo 60s weather!) so we’re lightening things up over here!",
+      "tags": [
+        "chicken",
+        "broccoli",
+        "quinoa",
+        "casserole",
+        "bake",
+        "one pot",
+        "chicken and broccoli"
+      ],
+      "image": "images/1587925397316-3H3G48VCMCNL98AVPBJV-858371D8-70DC-42DC-8A82-7E37D835BDDF.jpg"
+    },
+    {
+      "title": "Rosemary Parmesan Popovers",
+      "slug": "rosemary-parmesan-popovers",
+      "url": "https://www.onepotgal.com/recipes/rosemary-parmesan-popovers",
+      "published": "2020-04-19",
+      "excerpt": "The first time I had popovers was at Davio’s…",
+      "tags": [],
+      "image": "images/1587317058842-2862QRS98NSQY4MIG2G7-popover-cover---one-pot-gal.jpg"
+    },
+    {
+      "title": "Short Rib Mushroom Ragu",
+      "slug": "short-rib-mushroom-ragu",
+      "url": "https://www.onepotgal.com/recipes/short-rib-mushroom-ragu",
+      "published": "2020-04-04",
+      "excerpt": "This is my go-to secret weapon recipe for date nights, dinner parties, and special occasions. It comes together easy, but eats “fancy” - and the best part is that the crockpot does all the hard work for you!",
+      "tags": [
+        "recipes",
+        "braid short rib",
+        "short rib mushroom ragu",
+        "pasta"
+      ],
+      "image": "images/1581875474012-5N97R2OSSR3NV913AURC-for-the-blog.JPG"
+    }
+  ],
+  "homepageSections": [
+    {
+      "id": "share-your-vision",
+      "label": "Share your vision",
+      "text": [
+        "one pot gal",
+        "recipes"
+      ]
+    },
+    {
+      "id": "describe-what-youre-all-about",
+      "label": "Describe what you're all about",
+      "text": [
+        "cooking the most tasty, cozy, and delicious food that one pot can offer"
+      ]
+    },
+    {
+      "id": "banner",
+      "label": "Banner",
+      "text": []
+    },
+    {
+      "id": "recent-recipes",
+      "label": "Recent recipes",
+      "text": [
+        "recent recipes",
+        "Crock-pot Thai Chicken Ramen",
+        "Better-Than-Takeout Crockpot Thai Chicken Ramen.",
+        "get the recipe",
+        "Penne alla Vodka with Sausage & Peas",
+        "An ode to my favorite Italian restaurant in NYC, I give you Penne alla Vodka with Sausage & Peas.",
+        "get the recipe"
+      ]
+    }
+  ],
+  "images": {
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1600786646376-78TFYRQ9ZRLXUJMZ3I8I/one%2Bpot%2Bgal-logo-black-transparent.png": "images/1600786646376-78TFYRQ9ZRLXUJMZ3I8I-one-pot-gal-logo-black-transparent.png",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589742164279-UX5M2ZA60O3O5NSU9R8Y/IMG_8898+%281%29.jpg": "images/1589742164279-UX5M2ZA60O3O5NSU9R8Y-IMG_8898-1-.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587221888729-ES4F73ZYC3IAD3SXNTZ9/Kathleen%2BCarre%2B-%2BOne%2BPot%2BGal.jpg": "images/1587221888729-ES4F73ZYC3IAD3SXNTZ9-Kathleen-Carre---One-Pot-Gal.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1588430366730-QZJ92PF9HVXVOVYENURL/F273C378-A097-4F98-96FA-0454B9217EDF.jpg": "images/1588430366730-QZJ92PF9HVXVOVYENURL-F273C378-A097-4F98-96FA-0454B9217EDF.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5c64afb0aadd3422c9159418/1550207462168-PP05X0PGK6J7EZHL339B/image-asset.jpeg": "images/1550207462168-PP05X0PGK6J7EZHL339B-image-asset.jpeg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589217264172-ML95JTJYOPCJ2NDQXV4R/Adjustments.jpeg": "images/1589217264172-ML95JTJYOPCJ2NDQXV4R-Adjustments.jpeg",
+    "https://images.squarespace-cdn.com/content/v1/5c64b0299b7d15162b683f89/1550200886883-JHUVCCOM9GCDPLHMUQI9/image-asset.jpeg": "images/1550200886883-JHUVCCOM9GCDPLHMUQI9-image-asset.jpeg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589987085761-UIQIBQZI283YZ8D71EF9/IMG_9013.jpg": "images/1589987085761-UIQIBQZI283YZ8D71EF9-IMG_9013.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1588430993859-R8IZC7DWEAC2XVIBCNKC/F273C378-A097-4F98-96FA-0454B9217EDF.jpg": "images/1588430993859-R8IZC7DWEAC2XVIBCNKC-F273C378-A097-4F98-96FA-0454B9217EDF.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589316514375-6T5PMTJDDL3QFK98UCEO/IMG_8527.jpg": "images/1589316514375-6T5PMTJDDL3QFK98UCEO-IMG_8527.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1588119662253-K7Q62XBYP7IWFS8HY1HQ/C1C59A01-3262-4CE5-8D36-8FCF1BC8B484.jpg": "images/1588119662253-K7Q62XBYP7IWFS8HY1HQ-C1C59A01-3262-4CE5-8D36-8FCF1BC8B484.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587317058842-2862QRS98NSQY4MIG2G7/popover%2Bcover%2B-%2Bone%2Bpot%2Bgal.jpg": "images/1587317058842-2862QRS98NSQY4MIG2G7-popover-cover---one-pot-gal.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589981467443-0FC40NIBQ78DGVE5EUHN/IMG_9034.jpg": "images/1589981467443-0FC40NIBQ78DGVE5EUHN-IMG_9034.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587925397316-3H3G48VCMCNL98AVPBJV/858371D8-70DC-42DC-8A82-7E37D835BDDF.jpg": "images/1587925397316-3H3G48VCMCNL98AVPBJV-858371D8-70DC-42DC-8A82-7E37D835BDDF.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1581875474012-5N97R2OSSR3NV913AURC/for+the+blog.JPG": "images/1581875474012-5N97R2OSSR3NV913AURC-for-the-blog.JPG",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589981199650-S19MVQUEI6391ME6TI81/IMG_9013.jpg": "images/1589981199650-S19MVQUEI6391ME6TI81-IMG_9013.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589986941733-Z7XU09NZQ7WSBUTNCALR/IMG_9091.jpg": "images/1589986941733-Z7XU09NZQ7WSBUTNCALR-IMG_9091.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589981933347-1KAS6XLU28B9K5VQ8W0L/IMG_8957.jpg": "images/1589981933347-1KAS6XLU28B9K5VQ8W0L-IMG_8957.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589986864569-Q773KG4YJS7UY32XHQFU/7CEDC837-6BC3-4408-9399-EB28E855E5A9.jpg": "images/1589986864569-Q773KG4YJS7UY32XHQFU-7CEDC837-6BC3-4408-9399-EB28E855E5A9.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589981974676-YFYRAXQR8P5X0T1LZLVO/image-asset.jpeg": "images/1589981974676-YFYRAXQR8P5X0T1LZLVO-image-asset.jpeg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589210443556-WC39LCYPYDO9X0VWZH0F/IMG_8343.jpg": "images/1589210443556-WC39LCYPYDO9X0VWZH0F-IMG_8343.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589981858921-SXTUN467I7EZ8Q4AGFEV/IMG_8953.jpg": "images/1589981858921-SXTUN467I7EZ8Q4AGFEV-IMG_8953.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589742658938-3K6DB8GXJM18UNG7TAZY/IMG_8888.jpg": "images/1589742658938-3K6DB8GXJM18UNG7TAZY-IMG_8888.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589986795776-RPI2K9YBWWFB0I80C0DU/A4ECBF7A-5159-488A-8940-9241EFCA250B.jpg": "images/1589986795776-RPI2K9YBWWFB0I80C0DU-A4ECBF7A-5159-488A-8940-9241EFCA250B.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589744681400-1C09U4NVISNGNT8PGBEC/IMG_8863.jpg": "images/1589744681400-1C09U4NVISNGNT8PGBEC-IMG_8863.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589742359716-9ADVQAJUO9WN9FFT4MLB/IMG_8825.jpg": "images/1589742359716-9ADVQAJUO9WN9FFT4MLB-IMG_8825.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589743036621-EVLL9XF9RANFBDKTM349/IMG_8900+%281%29.jpg": "images/1589743036621-EVLL9XF9RANFBDKTM349-IMG_8900-1-.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589744277337-W8ZFCDLYRG6KYVDHFUDF/IMG_8888.jpg": "images/1589744277337-W8ZFCDLYRG6KYVDHFUDF-IMG_8888.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589741519546-LLXHWSROAHIWM7SHJI29/IMG_8898%2B%25281%2529.jpg": "images/1589741519546-LLXHWSROAHIWM7SHJI29-IMG_8898-1-.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589744810525-HQ0N2KK7DWFLK59M5116/image-asset.jpeg": "images/1589744810525-HQ0N2KK7DWFLK59M5116-image-asset.jpeg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589315826157-MO4VPYYD7JHS654I6GFT/IMG_8530+%281%29.jpg": "images/1589315826157-MO4VPYYD7JHS654I6GFT-IMG_8530-1-.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589313215589-EPVHNW8630Y3FZO6ALRX/IMG_8410.jpg": "images/1589313215589-EPVHNW8630Y3FZO6ALRX-IMG_8410.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589314343717-H2AFSLZQ2C8HMM1EE0YA/IMG_8496.jpg": "images/1589314343717-H2AFSLZQ2C8HMM1EE0YA-IMG_8496.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589315847068-U9AEJ9M4KFMB10UCU1IV/IMG_8527+%281%29.jpg": "images/1589315847068-U9AEJ9M4KFMB10UCU1IV-IMG_8527-1-.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589209319582-GIQG1BTY0PYLL7OG7BOV/IMG_8299.jpg": "images/1589209319582-GIQG1BTY0PYLL7OG7BOV-IMG_8299.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589744740513-V1JGLNNBF70AXU0ZGX4T/IMG_8917.jpg": "images/1589744740513-V1JGLNNBF70AXU0ZGX4T-IMG_8917.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589742115915-C1U9J9KFAF1JGWJZA9F2/image-asset.jpeg": "images/1589742115915-C1U9J9KFAF1JGWJZA9F2-image-asset.jpeg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589207186350-NR619RI2K4BWTC6W7U53/IMG_8343%2B%25282%2529.jpg": "images/1589207186350-NR619RI2K4BWTC6W7U53-IMG_8343-2-.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589210220409-6M59H0VKZAC9UXR5X5A2/image-asset.jpeg": "images/1589210220409-6M59H0VKZAC9UXR5X5A2-image-asset.jpeg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1589209226542-CAYEGPVPPLLPN1XYKU99/IMG_8252%2Bcopy.jpg": "images/1589209226542-CAYEGPVPPLLPN1XYKU99-IMG_8252-copy.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1571851211028-W8OZ92CTXSTVA1N06BGK/favicon.ico": "images/1571851211028-W8OZ92CTXSTVA1N06BGK-favicon.png",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1588040271348-813URMDWLICLDHU9CYAH/C1C59A01-3262-4CE5-8D36-8FCF1BC8B484.jpg": "images/1588040271348-813URMDWLICLDHU9CYAH-C1C59A01-3262-4CE5-8D36-8FCF1BC8B484.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1588041243352-DUJCDCQKVNJAEVLMNZGS/BB89E8C5-E561-4665-BC97-7A365F608F49.jpg": "images/1588041243352-DUJCDCQKVNJAEVLMNZGS-BB89E8C5-E561-4665-BC97-7A365F608F49.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587923103081-BWIU9J5RHDVQLSOKOXIJ/one-pot-chicken-broccoli-quinoa-bake.jpg": "images/1587923103081-BWIU9J5RHDVQLSOKOXIJ-one-pot-chicken-broccoli-quinoa-bake.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587923192776-XAYTOLF5A3K7RA33RHCM/one-pot-chicken-broccoli-quinoa-bake-broccoli-cut.jpg": "images/1587923192776-XAYTOLF5A3K7RA33RHCM-one-pot-chicken-broccoli-quinoa-bake-broccoli-cut.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587923756981-ZVB6ADIAQYAQCELEYXX9/one-pot-chicken-broccoli-quinoa-bake-oven-accoutrement.jpg": "images/1587923756981-ZVB6ADIAQYAQCELEYXX9-one-pot-chicken-broccoli-quinoa-bake-oven-accoutrement.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587923274965-72JK19C9BEVB8EQ1S1B6/one-pot-chicken-broccoli-quinoa-bake-wine.jpg": "images/1587923274965-72JK19C9BEVB8EQ1S1B6-one-pot-chicken-broccoli-quinoa-bake-wine.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587919942057-OWWHN4P3TY2FWOE12DGT/IMG_7596.jpg": "images/1587919942057-OWWHN4P3TY2FWOE12DGT-IMG_7596.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587923561709-JLYX17L7J01ZNQEH3CMK/one-pot-chicken-broccoli-quinoa-bake-oven.jpg": "images/1587923561709-JLYX17L7J01ZNQEH3CMK-one-pot-chicken-broccoli-quinoa-bake-oven.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587923374527-A3BXIRME62PWKT15CPAW/one-pot-chicken-broccoli-quinoa-bake-sam.jpg": "images/1587923374527-A3BXIRME62PWKT15CPAW-one-pot-chicken-broccoli-quinoa-bake-sam.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587923425511-LMJYQI5GIXSG7VHMH75C/one-pot-chicken-broccoli-quinoa-bake-final-product.jpg": "images/1587923425511-LMJYQI5GIXSG7VHMH75C-one-pot-chicken-broccoli-quinoa-bake-final-product.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587317162863-F0HDJ634BQIBIUIPLEXK/popover%2Bcover%2Bone%2Bpot%2Bgal.jpg": "images/1587317162863-F0HDJ634BQIBIUIPLEXK-popover-cover-one-pot-gal.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587318404676-WKVL0AYHGO4Z3KIK7NAZ/parmesan%2Brosemary%2Bpopover%2Btime%2B-%2Bone%2Bpot%2Bgal.jpg": "images/1587318404676-WKVL0AYHGO4Z3KIK7NAZ-parmesan-rosemary-popover-time---one-pot-gal.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587316501283-5C0G1GXN4IAYQNTJA6SC/favorite+cozy+nook+-+one+pot+gal.JPG": "images/1587316501283-5C0G1GXN4IAYQNTJA6SC-favorite-cozy-nook---one-pot-gal.JPG",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587316385032-BB14Y99Z83NCZUZMI5D1/popovers+-+one+pot+gal.png": "images/1587316385032-BB14Y99Z83NCZUZMI5D1-popovers---one-pot-gal.png",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587318447165-PCVPXQPJ72ICO8ETJ1ED/IMG_5378%2B%25281%2529.jpg": "images/1587318447165-PCVPXQPJ72ICO8ETJ1ED-IMG_5378-1-.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587159986593-300VGVLN2A5MNAQ5HOQ5/Short%2BRib%2BMushroom%2BRagu%2B-%2BOne%2BPot%2BGal.jpg": "images/1587159986593-300VGVLN2A5MNAQ5HOQ5-Short-Rib-Mushroom-Ragu---One-Pot-Gal.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587160294281-9UA1L101IPQMPREHV9RI/Short+Rib+Mushroom+Ragu+Ingredients+-+One+Pot+Gal.jpg": "images/1587160294281-9UA1L101IPQMPREHV9RI-Short-Rib-Mushroom-Ragu-Ingredients---One-Pot-Gal.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587160366878-SVY80ZBUPXNWWWG2CUOJ/Short+Rib+Mushroom+Ragu+Ingredients+2+-+One+Pot+Gal.jpg": "images/1587160366878-SVY80ZBUPXNWWWG2CUOJ-Short-Rib-Mushroom-Ragu-Ingredients-2---One-Pot-Gal.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587160420104-2OUTTGLZT65TWA1M4D5N/Short+Rib+Mushroom+Ragu+Ingredients+3+-+One+Pot+Gal.jpg": "images/1587160420104-2OUTTGLZT65TWA1M4D5N-Short-Rib-Mushroom-Ragu-Ingredients-3---One-Pot-Gal.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1587160470219-NL8F6XZ1V51X1KDOISED/Short+Rib+Mushroom+Ragu+Final+-+One+Pot+Gal.jpg": "images/1587160470219-NL8F6XZ1V51X1KDOISED-Short-Rib-Mushroom-Ragu-Final---One-Pot-Gal.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1588429356101-QJCSOIWAA7PEOMKKLT4D/Il+Cantinori+-+Pappardelle+Buttera": "images/1588429356101-QJCSOIWAA7PEOMKKLT4D-Il-Cantinori---Pappardelle-Buttera.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1588429800056-V5LBXDW1SN1678ERAXDJ/one+pot+gal+-+bartending": "images/1588429800056-V5LBXDW1SN1678ERAXDJ-one-pot-gal---bartending.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1588429104654-8ZNNIJCK7V04FQJTSP1B/Il+Cantinori+-+New+York+City": "images/1588429104654-8ZNNIJCK7V04FQJTSP1B-Il-Cantinori---New-York-City.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1588430415789-DB0KZF5QMTRSQRSB5Z3S/one+pot+gal+-+Penne+alla+Vodka+with+Sausage+%26+Peas": "images/1588430415789-DB0KZF5QMTRSQRSB5Z3S-one-pot-gal---Penne-alla-Vodka-with-Sausage-Peas.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5da7d49f6a98d112691e4bbc/1588430705691-7H0WXCI97MDC48VB37MC/one+pot+gal+-+Penne+alla+Vodka+with+Sausage+%26+Peas+2": "images/1588430705691-7H0WXCI97MDC48VB37MC-one-pot-gal---Penne-alla-Vodka-with-Sausage-Peas-2.jpg"
+  }
+}

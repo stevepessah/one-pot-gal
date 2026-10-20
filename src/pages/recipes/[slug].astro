@@ -1,0 +1,42 @@
+---
+import { getCollection, render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import PrintButton from "../../components/PrintButton.astro";
+import RecipeJsonLd from "../../components/RecipeJsonLd.astro";
+import { blogImage, formatDate } from "../../lib/content";
+import { recipeJsonLd } from "../../lib/recipe-schema";
+
+export async function getStaticPaths() {
+  const recipes = await getCollection("recipes");
+  return recipes.map((recipe) => ({
+    params: { slug: recipe.id },
+    props: { recipe },
+  }));
+}
+
+const { recipe } = Astro.props;
+const { Content } = await render(recipe);
+const image = blogImage(recipe.data.image);
+const schema = recipeJsonLd({
+  title: recipe.data.title,
+  description: recipe.data.excerpt,
+  body: recipe.body,
+  author: "Kathleen Pessah",
+  image,
+  datePublished: recipe.data.published,
+});
+if (!schema) console.warn(`No recipe schema: recipes/${recipe.id}`);
+---
+
+<Base title={recipe.data.title} description={recipe.data.excerpt} image={image} type="article">
+  <RecipeJsonLd data={schema} />
+  <article class="article">
+    <div class="article-tools">
+      <p class="eyebrow">{formatDate(recipe.data.published)}</p>
+      <PrintButton />
+    </div>
+    <div class="prose">
+      <Content />
+    </div>
+  </article>
+</Base>

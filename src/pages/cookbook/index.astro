@@ -1,0 +1,114 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import { PARTS, SECTIONS, byBookOrder, cookbookImage, isCookbookRecipe } from "../../lib/content";
+
+const recipes = (await getCollection("cookbook")).filter(isCookbookRecipe).sort(byBookOrder);
+---
+
+<Base
+  title="Cookbook"
+  description="Hungry, Hungry Hobans, the family cookbook of cozy recipes, stories, and traditions."
+>
+  <div class="page">
+    <header class="page-intro">
+      <p class="eyebrow">The family cookbook</p>
+      <h1>Hungry, Hungry Hobans</h1>
+      <p>
+        Whether it’s holidays, birthdays, weddings, or a bad breakup, food has always been there to bring comfort and aid celebrations for our family.
+      </p>
+      <div class="book-links">
+        <a class="text-link" href="/cookbook/introduction">Read the introduction</a>
+        <a class="text-link" href="/cookbook/cooks">Browse by cook</a>
+        <a class="text-link" href="/cookbook/glossary">Family glossary</a>
+      </div>
+    </header>
+
+    <div class="filters">
+      <label class="search-label">
+        Search
+        <input id="cookbook-search" type="search" placeholder="Search recipes or cooks" />
+      </label>
+      <div class="chip-row" data-filter="part" role="group" aria-label="Part of the book">
+        <button class="chip is-selected" type="button" data-value="">All parts</button>
+        {PARTS.map((part) => <button class="chip" type="button" data-value={part}>{part}</button>)}
+      </div>
+      <div class="chip-row" data-filter="section" role="group" aria-label="Category">
+        <button class="chip is-selected" type="button" data-value="">All categories</button>
+        {SECTIONS.map((section) => <button class="chip" type="button" data-value={section}>{section}</button>)}
+      </div>
+    </div>
+
+    <p class="result-count" id="cookbook-count" aria-live="polite">{recipes.length} recipes</p>
+    <div class="recipe-list" id="cookbook-list">
+      {
+        recipes.map((recipe) => {
+          const image = cookbookImage(recipe.data.images?.[0]);
+          const search = [recipe.data.title, recipe.data.author, recipe.data.section, recipe.data.part]
+            .filter(Boolean)
+            .join(" ")
+            .toLowerCase();
+          return (
+            <a
+              class="recipe-row"
+              href={`/cookbook/${recipe.id}`}
+              data-recipe
+              data-part={recipe.data.part}
+              data-section={recipe.data.section}
+              data-search={search}
+            >
+              {image ? <img class="thumb" src={image} alt="" /> : <span class="thumb-fallback" aria-hidden="true" />}
+              <span>
+                <span class="row-title">{recipe.data.title}</span>
+                <span class="row-meta">
+                  {[recipe.data.author, recipe.data.section].filter(Boolean).join(" · ")}
+                </span>
+              </span>
+            </a>
+          );
+        })
+      }
+    </div>
+    <p class="empty" id="cookbook-empty" hidden>No recipes match that search.</p>
+  </div>
+</Base>
+
+<script>
+  const search = document.querySelector<HTMLInputElement>("#cookbook-search");
+  const rows = [...document.querySelectorAll<HTMLElement>("[data-recipe]")];
+  const empty = document.querySelector<HTMLElement>("#cookbook-empty");
+  const count = document.querySelector<HTMLElement>("#cookbook-count");
+  const groups = [...document.querySelectorAll<HTMLElement>("[data-filter]")];
+  const selected: Record<string, string> = { part: "", section: "" };
+
+  function apply() {
+    const query = search?.value.trim().toLowerCase() ?? "";
+    let shown = 0;
+    for (const row of rows) {
+      const matchesQuery = !query || (row.dataset.search ?? "").includes(query);
+      const matchesPart = !selected.part || row.dataset.part === selected.part;
+      const matchesSection = !selected.section || row.dataset.section === selected.section;
+      const visible = matchesQuery && matchesPart && matchesSection;
+      row.hidden = !visible;
+      if (visible) shown += 1;
+    }
+    if (empty) empty.hidden = shown !== 0;
+    if (count) count.textContent = shown === 1 ? "1 recipe" : `${shown} recipes`;
+  }
+
+  search?.addEventListener("input", apply);
+
+  for (const group of groups) {
+    const name = group.dataset.filter;
+    if (!name) continue;
+    group.addEventListener("click", (event) => {
+      const button = (event.target as HTMLElement).closest("button");
+      if (!button) return;
+      selected[name] = button.dataset.value ?? "";
+      for (const chip of group.querySelectorAll("button")) {
+        chip.classList.toggle("is-selected", chip === button);
+      }
+      apply();
+    });
+  }
+</script>

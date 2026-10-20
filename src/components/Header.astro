@@ -1,0 +1,41 @@
+---
+const path = Astro.url.pathname;
+const links = [
+  { href: "/recipes", label: "Recipes" },
+  { href: "/cookbook", label: "Cookbook" },
+  { href: "/chili", label: "Chili" },
+  { href: "/about", label: "About" },
+];
+
+function current(href: string) {
+  return path === href || path.startsWith(`${href}/`);
+}
+---
+
+<header class="site-header">
+  <a class="logo" href="/">
+    <img src="/media/brand/logo.png" alt="one pot gal" width="1500" height="967" />
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+    Menu
+  </button>
+  <nav id="site-nav" class="site-nav">
+    {
+      links.map((link) => (
+        <a href={link.href} aria-current={current(link.href) ? "page" : undefined}>
+          {link.label}
+        </a>
+      ))
+    }
+  </nav>
+</header>
+
+<script>
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".site-nav");
+  toggle?.addEventListener("click", () => {
+    const open = nav?.classList.toggle("is-open") ?? false;
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.textContent = open ? "Close" : "Menu";
+  });
+</script>

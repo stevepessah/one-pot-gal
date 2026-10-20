@@ -1,0 +1,20 @@
+---
+interface Props {
+  href: string;
+  title: string;
+  excerpt?: string;
+  image?: string;
+  meta?: string;
+}
+
+const { href, title, excerpt, image, meta } = Astro.props;
+---
+
+<a class="story-card" href={href}>
+  {image && <img src={image} alt="" />}
+  <div>
+    {meta && <p class="eyebrow">{meta}</p>}
+    <h3>{title}</h3>
+    {excerpt && <p>{excerpt}</p>}
+  </div>
+</a>

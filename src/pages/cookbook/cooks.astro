@@ -1,0 +1,53 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import { byBookOrder, cookId, cookbookImage, isCookbookRecipe } from "../../lib/content";
+
+const recipes = (await getCollection("cookbook")).filter(isCookbookRecipe).sort(byBookOrder);
+const groups = new Map<string, typeof recipes>();
+for (const recipe of recipes) {
+  const author = recipe.data.author?.trim() || "The family";
+  const list = groups.get(author) ?? [];
+  list.push(recipe);
+  groups.set(author, list);
+}
+const cooks = [...groups.entries()].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
+---
+
+<Base title="Cooks" description="Family cooks in Hungry, Hungry Hobans, and the recipes each one contributed.">
+  <div class="page">
+    <header class="page-intro">
+      <p class="eyebrow">The family cookbook</p>
+      <h1>Cooks</h1>
+      <p>Every recipe in Hungry, Hungry Hobans, grouped by the person who wrote it down.</p>
+      <div class="book-links">
+        <a class="text-link" href="/cookbook">All recipes</a>
+        <a class="text-link" href="/cookbook/introduction">Read the introduction</a>
+        <a class="text-link" href="/cookbook/glossary">Family glossary</a>
+      </div>
+    </header>
+
+    {
+      cooks.map(([author, list]) => (
+        <section class="cook-group" id={cookId(author)}>
+          <h2>{author}</h2>
+          <p class="cook-count">{list.length === 1 ? "1 recipe" : `${list.length} recipes`}</p>
+          <div class="recipe-list">
+            {list.map((recipe) => {
+              const image = cookbookImage(recipe.data.images?.[0]);
+              return (
+                <a class="recipe-row" href={`/cookbook/${recipe.id}`}>
+                  {image ? <img class="thumb" src={image} alt="" /> : <span class="thumb-fallback" aria-hidden="true" />}
+                  <span>
+                    <span class="row-title">{recipe.data.title}</span>
+                    <span class="row-meta">{recipe.data.section}</span>
+                  </span>
+                </a>
+              );
+            })}
+          </div>
+        </section>
+      ))
+    }
+  </div>
+</Base>

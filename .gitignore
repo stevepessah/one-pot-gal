@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.astro/
+
+.DS_Store
+
+# Local source files that are not part of the site
+Hungry Hungry Hobans copy.pdf
+screencapture-sheep-tarpon-ga5d-squarespace-2026-10-05-21_39_20.png
+chili-cookoff/
+rosh-hashana-2026/

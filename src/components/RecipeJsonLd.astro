@@ -1,0 +1,11 @@
+---
+import { jsonLdScript } from "../lib/recipe-schema";
+
+interface Props {
+  data?: Record<string, unknown>;
+}
+
+const { data } = Astro.props;
+---
+
+{data && <script type="application/ld+json" set:html={jsonLdScript(data)} />}

@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import RecipeCard from "../../components/RecipeCard.astro";
+import { blogImage, byPublishedDesc, formatDate } from "../../lib/content";
+
+const recipes = (await getCollection("recipes")).sort(byPublishedDesc);
+const shareImage = blogImage(recipes[0]?.data.image);
+---
+
+<Base title="Recipes" description="Cozy one-pot recipes from Kathleen." image={shareImage}>
+  <div class="page">
+    <header class="page-intro">
+      <h1>Recipes</h1>
+      <p>Cooking the most tasty, cozy, and delicious food that one pot can offer.</p>
+    </header>
+    <div class="story-grid">
+      {
+        recipes.map((recipe) => (
+          <RecipeCard
+            href={`/recipes/${recipe.id}`}
+            title={recipe.data.title}
+            excerpt={recipe.data.excerpt}
+            image={blogImage(recipe.data.image)}
+            meta={formatDate(recipe.data.published)}
+          />
+        ))
+      }
+    </div>
+  </div>
+</Base>

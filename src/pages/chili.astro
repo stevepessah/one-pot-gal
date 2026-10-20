@@ -1,0 +1,80 @@
+---
+import Base from "../layouts/Base.astro";
+
+const years = [
+  {
+    year: "2026",
+    title: "The three-peat",
+    src: "/media/chili/2026.jpg",
+    width: 1350,
+    height: 1800,
+    alt: "Kathleen in a chef’s hat and Chili Cook Off Champion apron, one arm raised, celebrating with two girls in the living room.",
+    text: "Chef’s hat on, one arm in the air, and the girls in on the celebration. Three Septembers. Three wins.",
+  },
+  {
+    year: "2025",
+    title: "Back to back",
+    src: "/media/chili/2025.jpg",
+    width: 1350,
+    height: 1800,
+    alt: "A black Chili Cook Off Champion apron and a red-pepper oven mitt laid out on a cream chair.",
+    text: "Year two came with a new apron and a mitt covered in peppers. The title stayed right where she left it.",
+  },
+  {
+    year: "2024",
+    title: "The first win",
+    src: "/media/chili/2024.jpg",
+    width: 1350,
+    height: 1800,
+    alt: "Kathleen in the kitchen at night, wearing sunglasses and a Chili Cook Off Champion apron, giving two thumbs up.",
+    text: "Sunglasses still on, both thumbs up, the champion apron already doing the talking. The cook-off was over, and the streak had started.",
+  },
+];
+---
+
+<Base
+  title="Chili"
+  description="Kathleen has won the chili cook-off three years in a row: 2024, 2025, and 2026."
+  image="/media/chili/2026.jpg"
+>
+  <div class="page">
+    <header class="page-intro chili-intro">
+      <p class="eyebrow">Chili cook-off</p>
+      <h1>Three years running</h1>
+      <p>
+        Kathleen has won the chili cook-off three years in a row. 2026, 2025, and 2024, and she has the apron to prove it.
+        The pot is <a href="/cookbook/aunt-lynns-halloween-chili">Aunt Lynn’s Halloween Chili</a>.
+      </p>
+      <ol class="chili-record">
+        {
+          years.map((year) => (
+            <li>
+              <strong>{year.year}</strong>
+              <span>Champion</span>
+            </li>
+          ))
+        }
+      </ol>
+    </header>
+
+    <ol class="chili-years">
+      {
+        years.map((year) => (
+          <li class="chili-year">
+            <img
+              src={year.src}
+              width={year.width}
+              height={year.height}
+              alt={year.alt}
+            />
+            <div class="chili-copy">
+              <p class="eyebrow">{year.year}</p>
+              <h2>{year.title}</h2>
+              <p>{year.text}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</Base>

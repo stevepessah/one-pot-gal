@@ -1,0 +1,17 @@
+---
+import { getCollection, render } from "astro:content";
+import Base from "../layouts/Base.astro";
+
+const page = (await getCollection("about"))[0];
+const { Content } = await render(page);
+---
+
+<Base
+  title="About"
+  description="A blog by Kathleen about cozy, one-pot cooking for family and friends."
+  image="/media/blog/1587221888729-ES4F73ZYC3IAD3SXNTZ9-Kathleen-Carre---One-Pot-Gal.jpg"
+>
+  <article class="article prose">
+    <Content />
+  </article>
+</Base>
