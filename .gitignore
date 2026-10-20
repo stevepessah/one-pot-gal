@@ -3,6 +3,8 @@ dist/
 .astro/
 
 .DS_Store
+__pycache__/
+*.pyc
 
 # Local source files that are not part of the site
 Hungry Hungry Hobans copy.pdf
