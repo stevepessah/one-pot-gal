@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
-import { byBookOrder, cookId, cookbookImage, isCookbookRecipe } from "../../lib/content";
+import { brandLogo, byBookOrder, cookId, cookbookListImage, isCookbookRecipe } from "../../lib/content";
 
 const recipes = (await getCollection("cookbook")).filter(isCookbookRecipe).sort(byBookOrder);
 const groups = new Map<string, typeof recipes>();
@@ -34,10 +34,10 @@ const cooks = [...groups.entries()].sort((a, b) => b[1].length - a[1].length || 
           <p class="cook-count">{list.length === 1 ? "1 recipe" : `${list.length} recipes`}</p>
           <div class="recipe-list">
             {list.map((recipe) => {
-              const image = cookbookImage(recipe.data.images?.[0]);
+              const image = cookbookListImage(recipe.data.images?.[0]);
               return (
                 <a class="recipe-row" href={`/cookbook/${recipe.id}`}>
-                  {image ? <img class="thumb" src={image} alt="" /> : <span class="thumb-fallback" aria-hidden="true" />}
+                  <img class:list={["thumb", { "is-logo": image === brandLogo }]} src={image} alt="" />
                   <span>
                     <span class="row-title">{recipe.data.title}</span>
                     <span class="row-meta">{recipe.data.section}</span>

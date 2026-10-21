@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
-import { PARTS, SECTIONS, byBookOrder, cookbookImage, isCookbookRecipe } from "../../lib/content";
+import { PARTS, SECTIONS, brandLogo, byBookOrder, cookbookListImage, isCookbookRecipe } from "../../lib/content";
 
 const recipes = (await getCollection("cookbook")).filter(isCookbookRecipe).sort(byBookOrder);
 ---
@@ -43,7 +43,7 @@ const recipes = (await getCollection("cookbook")).filter(isCookbookRecipe).sort(
     <div class="recipe-list" id="cookbook-list">
       {
         recipes.map((recipe) => {
-          const image = cookbookImage(recipe.data.images?.[0]);
+          const image = cookbookListImage(recipe.data.images?.[0]);
           const search = [recipe.data.title, recipe.data.author, recipe.data.section, recipe.data.part]
             .filter(Boolean)
             .join(" ")
@@ -57,7 +57,7 @@ const recipes = (await getCollection("cookbook")).filter(isCookbookRecipe).sort(
               data-section={recipe.data.section}
               data-search={search}
             >
-              {image ? <img class="thumb" src={image} alt="" /> : <span class="thumb-fallback" aria-hidden="true" />}
+              <img class:list={["thumb", { "is-logo": image === brandLogo }]} src={image} alt="" />
               <span>
                 <span class="row-title">{recipe.data.title}</span>
                 <span class="row-meta">

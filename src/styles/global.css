@@ -454,8 +454,7 @@ a { color: inherit; }
 
 .recipe-row:hover .row-title { box-shadow: inset 0 -1px 0 var(--ink); }
 
-.thumb,
-.thumb-fallback {
+.thumb {
   width: 4.6rem;
   height: 4.6rem;
   border-radius: 10px;
@@ -463,7 +462,11 @@ a { color: inherit; }
   background: var(--paper-deep);
 }
 
-.thumb-fallback { display: block; }
+.thumb.is-logo {
+  object-fit: contain;
+  padding: 0.4rem;
+  background: var(--paper-deep);
+}
 
 .row-title {
   display: block;

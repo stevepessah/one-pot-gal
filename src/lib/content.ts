@@ -21,9 +21,15 @@ export function blogImage(src?: string) {
   return name ? `/media/blog/${name}` : undefined;
 }
 
+export const brandLogo = '/media/brand/logo.png';
+
 export function cookbookImage(src?: string) {
   const name = fileName(src);
   return name ? `/media/cookbook/${name}` : undefined;
+}
+
+export function cookbookListImage(src?: string) {
+  return cookbookImage(src) ?? brandLogo;
 }
 
 export function formatDate(value: string) {
